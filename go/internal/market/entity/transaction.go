@@ -45,10 +45,10 @@ func (t *Transaction) CloseSellOrder() {
 	}
 }
 
-func (t *Transaction) AddBuyOrderPedingShares(shares int) {
+func (t *Transaction) AddBuyOrderPendingShares(shares int) {
 	t.BuyingOrder.PendingShares += shares
 }
 
-func (t *Transaction) AddSellOrderPedingShares(shares int) {
+func (t *Transaction) AddSellOrderPendingShares(shares int) {
 	t.SellingOrder.PendingShares += shares
 }
